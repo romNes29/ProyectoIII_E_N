@@ -10,8 +10,9 @@ namespace Datos
 {
     public class Connect
     {
-        static NpgsqlConnection conn = new NpgsqlConnection("Server=localhost; Database=usuarios; User Id=fundamentos; Password=choco29;");
-
+        static NpgsqlConnection conn = new NpgsqlConnection("Server=localhost; Database=EMPRESA; User Id=fundamentos; Password=choco29;");
+        
+        //Method that connects the database to the application
         public void conectarBaseDatos()
         {
             try
@@ -22,18 +23,19 @@ namespace Datos
             {
                 MessageBox.Show("Error conectando a base de datos."+e.ToString());
             }
-            
+       
         }
+        //Method that disconnects the database from the application
         public void desconectarBaseDatos()
         {
             conn.Close();
         }
-
+        //Method validates that the user exists
         public static bool validaCredenciales(string usuario, string contrasenna)
         {
             bool permitirAcceso = false;
             DataTable tabla = new DataTable();
-            string query = "SELECT nombre, contrasenna FROM \"usuarios_login\" WHERE \"nombre\" = \'" + usuario + "\' AND PGP_SYM_DECRYPT(contrasenna::bytea, 'AES_KEY') = \'" + contrasenna + "\' ;";
+            string query = "SELECT usuario, contrasena FROM \"usuarios\" WHERE \"usuario\" = \'" + usuario + "\' AND PGP_SYM_DECRYPT(contrasena::bytea, 'AES_KEY') = \'" + contrasenna + "\' ;";
             NpgsqlCommand conector = new NpgsqlCommand(query,conn);
             NpgsqlDataAdapter datos = new NpgsqlDataAdapter(conector);
             datos.Fill(tabla);
