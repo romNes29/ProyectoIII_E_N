@@ -31,20 +31,22 @@ namespace Datos
             conn.Close();
         }
         //Method validates that the user exists
-        public static bool validaCredenciales(string usuario, string contrasenna)
+        public static (bool,string) validaCredenciales(string usuario, string contrasenna)
         {
             bool permitirAcceso = false;
+            string puesto = "";
             DataTable tabla = new DataTable();
-            string query = "SELECT usuario, contrasena FROM \"usuarios\" WHERE \"usuario\" = \'" + usuario + "\' AND PGP_SYM_DECRYPT(contrasena::bytea, 'AES_KEY') = \'" + contrasenna + "\' ;";
+            string query = "SELECT usuario, contrasena, tipo_usuario FROM \"usuarios\" WHERE \"usuario\" = \'" + usuario + "\' AND PGP_SYM_DECRYPT(contrasena::bytea, 'AES_KEY') = \'" + contrasenna + "\' ;";
             NpgsqlCommand conector = new NpgsqlCommand(query,conn);
             NpgsqlDataAdapter datos = new NpgsqlDataAdapter(conector);
             datos.Fill(tabla);
             if(tabla.Rows.Count == 1)
             {
                 permitirAcceso = true;
+                puesto = tabla.Rows[0]["tipo_usuario"].ToString();
             }
 
-            return permitirAcceso;
+            return (permitirAcceso,puesto);
             
         }
     }

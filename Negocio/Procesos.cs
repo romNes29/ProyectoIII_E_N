@@ -9,7 +9,7 @@ namespace Negocio
 {
     public class Procesos
     {
-        public static bool validarAcceso(string usuario, string contrasenna)
+        public static (bool,string) validarAcceso(string usuario, string contrasenna)
         {
             return Connect.validaCredenciales(usuario,contrasenna);
         }

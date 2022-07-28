@@ -13,7 +13,7 @@ namespace PresentacionLogin
 {
     public partial class frmLogin : Form
     {
-        public frmLogin()
+        public frmLogin() 
         {
             InitializeComponent();
         }
@@ -23,11 +23,16 @@ namespace PresentacionLogin
             
             string usuario = txtUsuario.Text;
             string contrasenna = txtContrasenna.Text.ToString();
+            (bool acceder, string cargo) = Procesos.validarAcceso(usuario, contrasenna);
 
-            if (Procesos.validarAcceso(usuario,contrasenna) == true)
+            if ( acceder== true && cargo.Equals("A"))
             {
                 MessageBox.Show("¡Bienvenido!");
-            }else MessageBox.Show("Usuario/Contraseña incorrecto o no se encuentra registrado.");
+                frmMantenimiento vaprueba = new frmMantenimiento();
+                vaprueba.Visible = true;
+                
+            }
+            else MessageBox.Show("Usuario/Contraseña incorrecto o no se encuentra registrado.");
 
             limpiarEspacios();
         }

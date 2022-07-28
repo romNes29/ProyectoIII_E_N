@@ -16,5 +16,10 @@ namespace PresentacionLogin
         {
             InitializeComponent();
         }
+
+        private void frmMantenimiento_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
