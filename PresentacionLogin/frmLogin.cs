@@ -13,6 +13,7 @@ namespace PresentacionLogin
 {
     public partial class frmLogin : Form
     {
+        
         public frmLogin() 
         {
             InitializeComponent();
@@ -28,8 +29,9 @@ namespace PresentacionLogin
             if ( acceder== true && cargo.Equals("A"))
             {
                 MessageBox.Show("¡Bienvenido!");
-                frmMantenimiento vaprueba = new frmMantenimiento();
-                vaprueba.Visible = true;
+                frmMantenimiento ofmrMantenimiento = new frmMantenimiento();
+                ofmrMantenimiento.Visible = true;
+                this.Hide();
                 
             }
             else MessageBox.Show("Usuario/Contraseña incorrecto o no se encuentra registrado.");
