@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtContrasenna = new System.Windows.Forms.TextBox();
@@ -38,12 +39,15 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.btnIniciarSesion = new System.Windows.Forms.Button();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.pbxVer = new FontAwesome.Sharp.IconPictureBox();
+            this.pbxOcultar = new FontAwesome.Sharp.IconPictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxVer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxOcultar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -51,6 +55,8 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel1.BackgroundImage = global::PresentacionLogin.Properties.Resources.J_MONTE_1;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Controls.Add(this.pbxOcultar);
+            this.panel1.Controls.Add(this.pbxVer);
             this.panel1.Controls.Add(this.iconPictureBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -63,6 +69,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(860, 568);
             this.panel1.TabIndex = 2;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 200;
+            this.iconPictureBox1.Location = new System.Drawing.Point(351, 51);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(213, 200);
+            this.iconPictureBox1.TabIndex = 11;
+            this.iconPictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -93,9 +113,8 @@
             this.txtContrasenna.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasenna.Location = new System.Drawing.Point(205, 343);
             this.txtContrasenna.Name = "txtContrasenna";
-            this.txtContrasenna.Size = new System.Drawing.Size(459, 26);
+            this.txtContrasenna.Size = new System.Drawing.Size(436, 26);
             this.txtContrasenna.TabIndex = 6;
-            this.txtContrasenna.UseSystemPasswordChar = true;
             // 
             // txtUsuario
             // 
@@ -168,19 +187,35 @@
             this.btnIniciarSesion.UseVisualStyleBackColor = false;
             this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
             // 
-            // iconPictureBox1
+            // pbxVer
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 200;
-            this.iconPictureBox1.Location = new System.Drawing.Point(351, 51);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(213, 200);
-            this.iconPictureBox1.TabIndex = 11;
-            this.iconPictureBox1.TabStop = false;
+            this.pbxVer.BackColor = System.Drawing.Color.White;
+            this.pbxVer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pbxVer.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.pbxVer.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pbxVer.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pbxVer.IconSize = 26;
+            this.pbxVer.Location = new System.Drawing.Point(638, 343);
+            this.pbxVer.Name = "pbxVer";
+            this.pbxVer.Size = new System.Drawing.Size(26, 26);
+            this.pbxVer.TabIndex = 12;
+            this.pbxVer.TabStop = false;
+            this.pbxVer.Click += new System.EventHandler(this.pbxVer_Click);
+            // 
+            // pbxOcultar
+            // 
+            this.pbxOcultar.BackColor = System.Drawing.Color.White;
+            this.pbxOcultar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pbxOcultar.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
+            this.pbxOcultar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pbxOcultar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pbxOcultar.IconSize = 26;
+            this.pbxOcultar.Location = new System.Drawing.Point(638, 343);
+            this.pbxOcultar.Name = "pbxOcultar";
+            this.pbxOcultar.Size = new System.Drawing.Size(26, 26);
+            this.pbxOcultar.TabIndex = 13;
+            this.pbxOcultar.TabStop = false;
+            this.pbxOcultar.Click += new System.EventHandler(this.pbxOcultar_Click);
             // 
             // frmLogin
             // 
@@ -194,12 +229,15 @@
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxVer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxOcultar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -216,6 +254,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconPictureBox pbxVer;
+        private FontAwesome.Sharp.IconPictureBox pbxOcultar;
     }
 }
 

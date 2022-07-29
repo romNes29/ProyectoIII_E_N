@@ -15,14 +15,13 @@ namespace PresentacionLogin
         public frmMantenimiento()
         {
             InitializeComponent();
-
+            ocultaBotones();
         }
 
         private void frmMantenimiento_Load(object sender, EventArgs e)
         {
             deshabilitaSubMenues();
             pbxMantenimiento.SendToBack();
-
         }
 
         private void timFechaHora_Tick(object sender, EventArgs e)
@@ -35,43 +34,56 @@ namespace PresentacionLogin
         {
             deshabilitaSubMenues();
             pnlClientes.Visible = true;
+            btnClientes.Visible = false;
+            btnOcultar.Visible = true;
         }
 
         private void btnTours_Click(object sender, EventArgs e)
         {
             deshabilitaSubMenues();
             pnlTours.Visible = true;
+            btnTours.Visible = false;
+            btnOcultarTour.Visible = true;
         }
 
         private void btnCategorias_Click(object sender, EventArgs e)
         {
             deshabilitaSubMenues();
             pnlCategorias.Visible = true;
-
+            btnCategorias.Visible = false;
+            btnOcultarCate.Visible = true;
         }
 
         private void btnCompras_Click(object sender, EventArgs e)
         {
             deshabilitaSubMenues();
             pnlCompras.Visible = true;
+            btnCompras.Visible = false;
+            btnOcultarCompra.Visible = true;
         }
 
         private void btnFacturas_Click(object sender, EventArgs e)
         {
             deshabilitaSubMenues();
             pnlFacturas.Visible = true;
+            btnFactura.Visible = false;
+            btnOcultarFact.Visible = true;
         }
 
         private void btnLugares_Click(object sender, EventArgs e)
         {
             deshabilitaSubMenues();
             pnlLugares.Visible = true;
+            btnLugares.Visible = false;
+            btnOcultarLugar.Visible = true;
         }
 
         private void btnReservas_Click(object sender, EventArgs e)
         {
             deshabilitaSubMenues();
             pnlReservas.Visible = true;
+            btnReservas.Visible = false;
+            btnOcultarReserva.Visible = true;
         }
         private void deshabilitaSubMenues()
         {
@@ -82,8 +94,6 @@ namespace PresentacionLogin
             pnlFacturas.Visible = false;
             pnlLugares.Visible = false;
             pnlReservas.Visible = false;
-
-            
         }
 
         private void panel3_MouseClick(object sender, MouseEventArgs e)
@@ -273,6 +283,71 @@ namespace PresentacionLogin
         private void frmMantenimiento_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pbxMantenimiento_MouseClick(object sender, MouseEventArgs e)
+        {
+            deshabilitaSubMenues();
+        }
+
+        private void ocultaBotones()
+        {
+            btnOcultar.Visible = false;
+            btnOcultarTour.Visible = false;
+            btnOcultarCate.Visible = false;
+            btnOcultarCompra.Visible = false;
+            btnOcultarFact.Visible = false;
+            btnOcultarLugar.Visible = false;
+            btnOcultarReserva.Visible = false;
+        }
+
+        private void btnOcultar_Click(object sender, EventArgs e)
+        {
+            deshabilitaSubMenues();
+            btnOcultar.Visible = false;
+            btnClientes.Visible = true;
+        }
+
+        private void btnOcultarTour_Click(object sender, EventArgs e)
+        {
+            deshabilitaSubMenues();
+            btnTours.Visible = true;
+            btnOcultarTour.Visible = false;
+        }
+
+        private void btnOcultarCate_Click(object sender, EventArgs e)
+        {
+            deshabilitaSubMenues();
+            btnOcultarCate.Visible = false;
+            btnCategorias.Visible = true;
+        }
+
+        private void btnOcultarCompra_Click(object sender, EventArgs e)
+        {
+            deshabilitaSubMenues();
+            btnOcultarCompra.Visible = false;
+            btnCompras.Visible = true;
+        }
+
+        private void btnOcultarFact_Click(object sender, EventArgs e)
+        {
+            deshabilitaSubMenues();
+            btnOcultarFact.Visible = false;
+            btnFactura.Visible = true;
+        }
+
+        private void btnOcultarLugar_Click(object sender, EventArgs e)
+        {
+            deshabilitaSubMenues();
+            btnOcultarLugar.Visible = false;
+            btnLugares.Visible = true;
+        }
+
+        private void btnOcultarReserva_Click(object sender, EventArgs e)
+        {
+            deshabilitaSubMenues();
+            btnOcultarReserva.Visible = false;
+            btnReservas.Visible = true;
         }
     }
 }

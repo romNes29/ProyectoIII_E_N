@@ -17,6 +17,8 @@ namespace PresentacionLogin
         public frmLogin() 
         {
             InitializeComponent();
+            txtContrasenna.PasswordChar = '*';
+            pbxVer.BringToFront();
         }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
@@ -45,5 +47,21 @@ namespace PresentacionLogin
             txtContrasenna.Text = "";
         }
 
+        private void pbxVer_Click(object sender, EventArgs e)
+        {
+            pbxOcultar.BringToFront();
+            txtContrasenna.PasswordChar = '\0';
+        }
+
+        private void pbxOcultar_Click(object sender, EventArgs e)
+        {
+            pbxVer.BringToFront();
+            txtContrasenna.PasswordChar = '*';
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
