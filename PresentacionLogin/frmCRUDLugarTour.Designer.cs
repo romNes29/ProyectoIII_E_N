@@ -1,6 +1,6 @@
 ﻿namespace PresentacionLogin
 {
-    partial class frmCRUDClientes
+    partial class frmCRUDLugarTour
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,21 +40,16 @@
             this.btnInicioM = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.pnlCajasTexto = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
             this.btnBuscarTour = new FontAwesome.Sharp.IconButton();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.txtIdentificacion = new System.Windows.Forms.TextBox();
             this.btnModificarC = new FontAwesome.Sharp.IconButton();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.btnEliminarC = new FontAwesome.Sharp.IconButton();
-            this.txtEmail = new System.Windows.Forms.TextBox();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.btnCrearC = new FontAwesome.Sharp.IconButton();
             this.txtSegundoApellido = new System.Windows.Forms.TextBox();
             this.txtPrimerApellido = new System.Windows.Forms.TextBox();
@@ -69,71 +61,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(83, 250);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(218, 26);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "EMAIL";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(87, 290);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(214, 26);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "TELEFONO";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(83, 214);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(218, 26);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "DIRECCION";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(83, 175);
+            this.label3.Location = new System.Drawing.Point(83, 277);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(218, 26);
             this.label3.TabIndex = 11;
-            this.label3.Text = "SEGUNDO APELLIDO";
+            this.label3.Text = "DESCRIPCION";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(83, 140);
+            this.label2.Location = new System.Drawing.Point(83, 211);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(218, 26);
             this.label2.TabIndex = 10;
-            this.label2.Text = "PRIMER APELLIDO";
+            this.label2.Text = "DIRECCION";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -141,7 +92,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(87, 104);
+            this.label1.Location = new System.Drawing.Point(83, 140);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(214, 26);
@@ -194,9 +145,9 @@
             this.lblCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(126)))), ((int)(((byte)(219)))));
             this.lblCliente.Location = new System.Drawing.Point(12, 9);
             this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(82, 22);
+            this.lblCliente.Size = new System.Drawing.Size(119, 22);
             this.lblCliente.TabIndex = 17;
-            this.lblCliente.Text = "CLIENTE";
+            this.lblCliente.Text = "LUGAR TOUR";
             // 
             // pictureBox1
             // 
@@ -234,14 +185,10 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(69)))));
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.btnInicioM);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 38);
             this.panel2.Name = "panel2";
@@ -256,19 +203,6 @@
             this.panel4.Size = new System.Drawing.Size(10, 60);
             this.panel4.TabIndex = 16;
             // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(83, 68);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(218, 26);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "NUMERO IDENTIFICACION";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // pnlCajasTexto
             // 
             this.pnlCajasTexto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(73)))));
@@ -276,15 +210,11 @@
             this.pnlCajasTexto.Controls.Add(this.btnBuscarTour);
             this.pnlCajasTexto.Controls.Add(this.iconPictureBox1);
             this.pnlCajasTexto.Controls.Add(this.panel14);
-            this.pnlCajasTexto.Controls.Add(this.txtIdentificacion);
             this.pnlCajasTexto.Controls.Add(this.btnModificarC);
             this.pnlCajasTexto.Controls.Add(this.txtNombre);
             this.pnlCajasTexto.Controls.Add(this.panel13);
-            this.pnlCajasTexto.Controls.Add(this.txtTelefono);
             this.pnlCajasTexto.Controls.Add(this.btnEliminarC);
-            this.pnlCajasTexto.Controls.Add(this.txtEmail);
             this.pnlCajasTexto.Controls.Add(this.panel12);
-            this.pnlCajasTexto.Controls.Add(this.txtDireccion);
             this.pnlCajasTexto.Controls.Add(this.btnCrearC);
             this.pnlCajasTexto.Controls.Add(this.txtSegundoApellido);
             this.pnlCajasTexto.Controls.Add(this.txtPrimerApellido);
@@ -344,15 +274,6 @@
             this.panel14.Size = new System.Drawing.Size(10, 25);
             this.panel14.TabIndex = 7;
             // 
-            // txtIdentificacion
-            // 
-            this.txtIdentificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdentificacion.Location = new System.Drawing.Point(57, 68);
-            this.txtIdentificacion.Name = "txtIdentificacion";
-            this.txtIdentificacion.Size = new System.Drawing.Size(365, 26);
-            this.txtIdentificacion.TabIndex = 6;
-            this.txtIdentificacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // btnModificarC
             // 
             this.btnModificarC.FlatAppearance.BorderSize = 0;
@@ -375,7 +296,7 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(57, 104);
+            this.txtNombre.Location = new System.Drawing.Point(57, 140);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(365, 26);
             this.txtNombre.TabIndex = 5;
@@ -388,15 +309,6 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(10, 25);
             this.panel13.TabIndex = 5;
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(57, 290);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(365, 26);
-            this.txtTelefono.TabIndex = 4;
-            this.txtTelefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnEliminarC
             // 
@@ -417,15 +329,6 @@
             this.btnEliminarC.Text = "ELIMINAR";
             this.btnEliminarC.UseVisualStyleBackColor = false;
             // 
-            // txtEmail
-            // 
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(57, 250);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(365, 26);
-            this.txtEmail.TabIndex = 3;
-            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(199)))));
@@ -433,15 +336,6 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(10, 25);
             this.panel12.TabIndex = 3;
-            // 
-            // txtDireccion
-            // 
-            this.txtDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccion.Location = new System.Drawing.Point(57, 214);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(365, 26);
-            this.txtDireccion.TabIndex = 2;
-            this.txtDireccion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnCrearC
             // 
@@ -465,7 +359,7 @@
             // txtSegundoApellido
             // 
             this.txtSegundoApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSegundoApellido.Location = new System.Drawing.Point(57, 175);
+            this.txtSegundoApellido.Location = new System.Drawing.Point(57, 277);
             this.txtSegundoApellido.Name = "txtSegundoApellido";
             this.txtSegundoApellido.Size = new System.Drawing.Size(365, 26);
             this.txtSegundoApellido.TabIndex = 1;
@@ -474,7 +368,7 @@
             // txtPrimerApellido
             // 
             this.txtPrimerApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrimerApellido.Location = new System.Drawing.Point(57, 140);
+            this.txtPrimerApellido.Location = new System.Drawing.Point(57, 211);
             this.txtPrimerApellido.Name = "txtPrimerApellido";
             this.txtPrimerApellido.Size = new System.Drawing.Size(365, 26);
             this.txtPrimerApellido.TabIndex = 0;
@@ -485,7 +379,7 @@
             this.timFechaHora.Enabled = true;
             this.timFechaHora.Tick += new System.EventHandler(this.timFechaHora_Tick);
             // 
-            // frmCRUDClientes
+            // frmCRUDLugarTour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -496,10 +390,10 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
-            this.Name = "frmCRUDClientes";
+            this.Name = "frmCRUDLugarTour";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmCRUDClientes_FormClosed);
-            this.Load += new System.EventHandler(this.frmCRUDClientes_Load);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmCRUDLugarTour_FormClosed);
+            this.Load += new System.EventHandler(this.frmCRUDLugarTour_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -512,25 +406,17 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel pnlCajasTexto;
         private FontAwesome.Sharp.IconButton btnInicioM;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtTelefono;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtSegundoApellido;
         private System.Windows.Forms.TextBox txtPrimerApellido;
         private System.Windows.Forms.Timer timFechaHora;
-        private System.Windows.Forms.TextBox txtIdentificacion;
         private System.Windows.Forms.TextBox txtNombre;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Panel panel14;
@@ -546,5 +432,4 @@
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblHora;
     }
-
 }

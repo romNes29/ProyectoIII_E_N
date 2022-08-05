@@ -162,22 +162,34 @@ namespace PresentacionLogin
         //Acciones de Botones CRUD tours
         private void btnCrearTour_Click(object sender, EventArgs e)
         {
-
+            frmCRUDTours oCRUDTour = new frmCRUDTours();
+            oCRUDTour.Visible = true;
+            deshabilitaSubMenues();
+            this.Hide();
         }
 
         private void btnEliminarTou_Click(object sender, EventArgs e)
         {
-
+            frmCRUDTours oCRUDTour = new frmCRUDTours();
+            oCRUDTour.Visible = true;
+            deshabilitaSubMenues();
+            this.Hide();
         }
 
         private void btnModificarTour_Click(object sender, EventArgs e)
         {
-
+            frmCRUDTours oCRUDTour = new frmCRUDTours();
+            oCRUDTour.Visible = true;
+            deshabilitaSubMenues();
+            this.Hide();
         }
 
         private void btnBuscarTour_Click(object sender, EventArgs e)
         {
-
+            frmCRUDTours oCRUDTour = new frmCRUDTours();
+            oCRUDTour.Visible = true;
+            deshabilitaSubMenues();
+            this.Hide();
         }
         //Acciones de Botones CRUD categorias
         private void btnCrearCate_Click(object sender, EventArgs e)
@@ -242,22 +254,34 @@ namespace PresentacionLogin
         //Acciones de Botones CRUD lugares
         private void btnCrearLugar_Click(object sender, EventArgs e)
         {
-
+            frmCRUDLugarTour oCRUDLugarTour = new frmCRUDLugarTour();
+            oCRUDLugarTour.Visible = true;
+            deshabilitaSubMenues();
+            this.Hide();
         }
 
         private void btnEliminarLugar_Click(object sender, EventArgs e)
         {
-
+            frmCRUDLugarTour oCRUDLugarTour = new frmCRUDLugarTour();
+            oCRUDLugarTour.Visible = true;
+            deshabilitaSubMenues();
+            this.Hide();
         }
 
         private void btnModificarLugar_Click(object sender, EventArgs e)
         {
-
+            frmCRUDLugarTour oCRUDLugarTour = new frmCRUDLugarTour();
+            oCRUDLugarTour.Visible = true;
+            deshabilitaSubMenues();
+            this.Hide();
         }
 
         private void btnBuscarLugar_Click(object sender, EventArgs e)
         {
-
+            frmCRUDLugarTour oCRUDLugarTour = new frmCRUDLugarTour();
+            oCRUDLugarTour.Visible = true;
+            deshabilitaSubMenues();
+            this.Hide();
         }
         //Acciones de Botones CRUD reservas
         private void btnCrearRe_Click(object sender, EventArgs e)

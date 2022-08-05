@@ -35,15 +35,21 @@ namespace Datos
         {
             bool permitirAcceso = false;
             string puesto = "";
-            DataTable tabla = new DataTable();
-            string query = "SELECT usuario, contrasena, tipo_usuario FROM \"usuarios\" WHERE \"usuario\" = \'" + usuario + "\' AND PGP_SYM_DECRYPT(contrasena::bytea, 'AES_KEY') = \'" + contrasenna + "\' ;";
-            NpgsqlCommand conector = new NpgsqlCommand(query,conn);
-            NpgsqlDataAdapter datos = new NpgsqlDataAdapter(conector);
-            datos.Fill(tabla);
-            if(tabla.Rows.Count == 1)
+            try{ 
+                DataTable tabla = new DataTable();
+                string query = "SELECT usuario, contrasena, tipo_usuario FROM \"usuarios\" WHERE \"usuario\" = \'" + usuario + "\' AND PGP_SYM_DECRYPT(contrasena::bytea, 'AES_KEY') = \'" + contrasenna + "\' ;";
+                NpgsqlCommand conector = new NpgsqlCommand(query,conn);
+                NpgsqlDataAdapter datos = new NpgsqlDataAdapter(conector);
+                datos.Fill(tabla);
+                if(tabla.Rows.Count == 1)
+                {
+                    permitirAcceso = true;
+                    puesto = tabla.Rows[0]["tipo_usuario"].ToString();
+                }
+            }
+            catch (Exception e)
             {
-                permitirAcceso = true;
-                puesto = tabla.Rows[0]["tipo_usuario"].ToString();
+                MessageBox.Show("ERROR: "+e.ToString());
             }
 
             return (permitirAcceso,puesto);

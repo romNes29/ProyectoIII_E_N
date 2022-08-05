@@ -31,6 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnOcultarTour = new FontAwesome.Sharp.IconButton();
+            this.btnOcultarReserva = new FontAwesome.Sharp.IconButton();
+            this.btnOcultarLugar = new FontAwesome.Sharp.IconButton();
+            this.btnOcultarFact = new FontAwesome.Sharp.IconButton();
+            this.btnOcultarCompra = new FontAwesome.Sharp.IconButton();
+            this.btnOcultarCate = new FontAwesome.Sharp.IconButton();
             this.btnOcultar = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -115,12 +121,6 @@
             this.btnCrearRe = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pbxMantenimiento = new FontAwesome.Sharp.IconPictureBox();
-            this.btnOcultarTour = new FontAwesome.Sharp.IconButton();
-            this.btnOcultarCate = new FontAwesome.Sharp.IconButton();
-            this.btnOcultarCompra = new FontAwesome.Sharp.IconButton();
-            this.btnOcultarFact = new FontAwesome.Sharp.IconButton();
-            this.btnOcultarLugar = new FontAwesome.Sharp.IconButton();
-            this.btnOcultarReserva = new FontAwesome.Sharp.IconButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlClientes.SuspendLayout();
@@ -175,6 +175,126 @@
             this.panel2.Size = new System.Drawing.Size(193, 537);
             this.panel2.TabIndex = 1;
             this.panel2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseClick);
+            // 
+            // btnOcultarTour
+            // 
+            this.btnOcultarTour.FlatAppearance.BorderSize = 0;
+            this.btnOcultarTour.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(199)))));
+            this.btnOcultarTour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOcultarTour.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOcultarTour.ForeColor = System.Drawing.Color.White;
+            this.btnOcultarTour.IconChar = FontAwesome.Sharp.IconChar.Bus;
+            this.btnOcultarTour.IconColor = System.Drawing.Color.White;
+            this.btnOcultarTour.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnOcultarTour.IconSize = 40;
+            this.btnOcultarTour.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOcultarTour.Location = new System.Drawing.Point(12, 229);
+            this.btnOcultarTour.Name = "btnOcultarTour";
+            this.btnOcultarTour.Size = new System.Drawing.Size(175, 42);
+            this.btnOcultarTour.TabIndex = 16;
+            this.btnOcultarTour.Text = "TOURS";
+            this.btnOcultarTour.UseVisualStyleBackColor = false;
+            this.btnOcultarTour.Click += new System.EventHandler(this.btnOcultarTour_Click);
+            // 
+            // btnOcultarReserva
+            // 
+            this.btnOcultarReserva.FlatAppearance.BorderSize = 0;
+            this.btnOcultarReserva.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(199)))));
+            this.btnOcultarReserva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOcultarReserva.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOcultarReserva.ForeColor = System.Drawing.Color.White;
+            this.btnOcultarReserva.IconChar = FontAwesome.Sharp.IconChar.Laptop;
+            this.btnOcultarReserva.IconColor = System.Drawing.Color.White;
+            this.btnOcultarReserva.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnOcultarReserva.IconSize = 40;
+            this.btnOcultarReserva.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOcultarReserva.Location = new System.Drawing.Point(12, 469);
+            this.btnOcultarReserva.Name = "btnOcultarReserva";
+            this.btnOcultarReserva.Size = new System.Drawing.Size(175, 42);
+            this.btnOcultarReserva.TabIndex = 21;
+            this.btnOcultarReserva.Text = "RESERVAS";
+            this.btnOcultarReserva.UseVisualStyleBackColor = false;
+            this.btnOcultarReserva.Click += new System.EventHandler(this.btnOcultarReserva_Click);
+            // 
+            // btnOcultarLugar
+            // 
+            this.btnOcultarLugar.FlatAppearance.BorderSize = 0;
+            this.btnOcultarLugar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(199)))));
+            this.btnOcultarLugar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOcultarLugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOcultarLugar.ForeColor = System.Drawing.Color.White;
+            this.btnOcultarLugar.IconChar = FontAwesome.Sharp.IconChar.City;
+            this.btnOcultarLugar.IconColor = System.Drawing.Color.White;
+            this.btnOcultarLugar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnOcultarLugar.IconSize = 40;
+            this.btnOcultarLugar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOcultarLugar.Location = new System.Drawing.Point(12, 421);
+            this.btnOcultarLugar.Name = "btnOcultarLugar";
+            this.btnOcultarLugar.Size = new System.Drawing.Size(175, 42);
+            this.btnOcultarLugar.TabIndex = 20;
+            this.btnOcultarLugar.Text = "LUGARES";
+            this.btnOcultarLugar.UseVisualStyleBackColor = false;
+            this.btnOcultarLugar.Click += new System.EventHandler(this.btnOcultarLugar_Click);
+            // 
+            // btnOcultarFact
+            // 
+            this.btnOcultarFact.FlatAppearance.BorderSize = 0;
+            this.btnOcultarFact.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(199)))));
+            this.btnOcultarFact.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOcultarFact.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOcultarFact.ForeColor = System.Drawing.Color.White;
+            this.btnOcultarFact.IconChar = FontAwesome.Sharp.IconChar.Receipt;
+            this.btnOcultarFact.IconColor = System.Drawing.Color.White;
+            this.btnOcultarFact.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnOcultarFact.IconSize = 40;
+            this.btnOcultarFact.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOcultarFact.Location = new System.Drawing.Point(12, 373);
+            this.btnOcultarFact.Name = "btnOcultarFact";
+            this.btnOcultarFact.Size = new System.Drawing.Size(175, 42);
+            this.btnOcultarFact.TabIndex = 19;
+            this.btnOcultarFact.Text = "FACTURAS";
+            this.btnOcultarFact.UseVisualStyleBackColor = false;
+            this.btnOcultarFact.Click += new System.EventHandler(this.btnOcultarFact_Click);
+            // 
+            // btnOcultarCompra
+            // 
+            this.btnOcultarCompra.FlatAppearance.BorderSize = 0;
+            this.btnOcultarCompra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(199)))));
+            this.btnOcultarCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOcultarCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOcultarCompra.ForeColor = System.Drawing.Color.White;
+            this.btnOcultarCompra.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
+            this.btnOcultarCompra.IconColor = System.Drawing.Color.White;
+            this.btnOcultarCompra.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnOcultarCompra.IconSize = 40;
+            this.btnOcultarCompra.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOcultarCompra.Location = new System.Drawing.Point(12, 325);
+            this.btnOcultarCompra.Name = "btnOcultarCompra";
+            this.btnOcultarCompra.Size = new System.Drawing.Size(175, 42);
+            this.btnOcultarCompra.TabIndex = 18;
+            this.btnOcultarCompra.Text = "COMPRAS";
+            this.btnOcultarCompra.UseVisualStyleBackColor = false;
+            this.btnOcultarCompra.Click += new System.EventHandler(this.btnOcultarCompra_Click);
+            // 
+            // btnOcultarCate
+            // 
+            this.btnOcultarCate.FlatAppearance.BorderSize = 0;
+            this.btnOcultarCate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(199)))));
+            this.btnOcultarCate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOcultarCate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOcultarCate.ForeColor = System.Drawing.Color.White;
+            this.btnOcultarCate.IconChar = FontAwesome.Sharp.IconChar.Book;
+            this.btnOcultarCate.IconColor = System.Drawing.Color.White;
+            this.btnOcultarCate.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnOcultarCate.IconSize = 35;
+            this.btnOcultarCate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOcultarCate.Location = new System.Drawing.Point(12, 277);
+            this.btnOcultarCate.Name = "btnOcultarCate";
+            this.btnOcultarCate.Size = new System.Drawing.Size(175, 42);
+            this.btnOcultarCate.TabIndex = 17;
+            this.btnOcultarCate.Text = "CATEGORIAS";
+            this.btnOcultarCate.UseVisualStyleBackColor = false;
+            this.btnOcultarCate.Click += new System.EventHandler(this.btnOcultarCate_Click);
             // 
             // btnOcultar
             // 
@@ -1332,7 +1452,6 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.panel3.Controls.Add(this.pbxMantenimiento);
             this.panel3.Controls.Add(this.pnlCompras);
             this.panel3.Controls.Add(this.pnlTours);
             this.panel3.Controls.Add(this.pnlFacturas);
@@ -1342,6 +1461,7 @@
             this.panel3.Controls.Add(this.pnlClientes);
             this.panel3.Controls.Add(this.lblFecha);
             this.panel3.Controls.Add(this.lblHora);
+            this.panel3.Controls.Add(this.pbxMantenimiento);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(193, 31);
             this.panel3.Name = "panel3";
@@ -1365,126 +1485,6 @@
             this.pbxMantenimiento.TabIndex = 11;
             this.pbxMantenimiento.TabStop = false;
             this.pbxMantenimiento.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pbxMantenimiento_MouseClick);
-            // 
-            // btnOcultarTour
-            // 
-            this.btnOcultarTour.FlatAppearance.BorderSize = 0;
-            this.btnOcultarTour.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(199)))));
-            this.btnOcultarTour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOcultarTour.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOcultarTour.ForeColor = System.Drawing.Color.White;
-            this.btnOcultarTour.IconChar = FontAwesome.Sharp.IconChar.Bus;
-            this.btnOcultarTour.IconColor = System.Drawing.Color.White;
-            this.btnOcultarTour.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnOcultarTour.IconSize = 40;
-            this.btnOcultarTour.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnOcultarTour.Location = new System.Drawing.Point(12, 229);
-            this.btnOcultarTour.Name = "btnOcultarTour";
-            this.btnOcultarTour.Size = new System.Drawing.Size(175, 42);
-            this.btnOcultarTour.TabIndex = 16;
-            this.btnOcultarTour.Text = "TOURS";
-            this.btnOcultarTour.UseVisualStyleBackColor = false;
-            this.btnOcultarTour.Click += new System.EventHandler(this.btnOcultarTour_Click);
-            // 
-            // btnOcultarCate
-            // 
-            this.btnOcultarCate.FlatAppearance.BorderSize = 0;
-            this.btnOcultarCate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(199)))));
-            this.btnOcultarCate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOcultarCate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOcultarCate.ForeColor = System.Drawing.Color.White;
-            this.btnOcultarCate.IconChar = FontAwesome.Sharp.IconChar.Book;
-            this.btnOcultarCate.IconColor = System.Drawing.Color.White;
-            this.btnOcultarCate.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnOcultarCate.IconSize = 35;
-            this.btnOcultarCate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnOcultarCate.Location = new System.Drawing.Point(12, 277);
-            this.btnOcultarCate.Name = "btnOcultarCate";
-            this.btnOcultarCate.Size = new System.Drawing.Size(175, 42);
-            this.btnOcultarCate.TabIndex = 17;
-            this.btnOcultarCate.Text = "CATEGORIAS";
-            this.btnOcultarCate.UseVisualStyleBackColor = false;
-            this.btnOcultarCate.Click += new System.EventHandler(this.btnOcultarCate_Click);
-            // 
-            // btnOcultarCompra
-            // 
-            this.btnOcultarCompra.FlatAppearance.BorderSize = 0;
-            this.btnOcultarCompra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(199)))));
-            this.btnOcultarCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOcultarCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOcultarCompra.ForeColor = System.Drawing.Color.White;
-            this.btnOcultarCompra.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
-            this.btnOcultarCompra.IconColor = System.Drawing.Color.White;
-            this.btnOcultarCompra.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnOcultarCompra.IconSize = 40;
-            this.btnOcultarCompra.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnOcultarCompra.Location = new System.Drawing.Point(12, 325);
-            this.btnOcultarCompra.Name = "btnOcultarCompra";
-            this.btnOcultarCompra.Size = new System.Drawing.Size(175, 42);
-            this.btnOcultarCompra.TabIndex = 18;
-            this.btnOcultarCompra.Text = "COMPRAS";
-            this.btnOcultarCompra.UseVisualStyleBackColor = false;
-            this.btnOcultarCompra.Click += new System.EventHandler(this.btnOcultarCompra_Click);
-            // 
-            // btnOcultarFact
-            // 
-            this.btnOcultarFact.FlatAppearance.BorderSize = 0;
-            this.btnOcultarFact.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(199)))));
-            this.btnOcultarFact.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOcultarFact.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOcultarFact.ForeColor = System.Drawing.Color.White;
-            this.btnOcultarFact.IconChar = FontAwesome.Sharp.IconChar.Receipt;
-            this.btnOcultarFact.IconColor = System.Drawing.Color.White;
-            this.btnOcultarFact.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnOcultarFact.IconSize = 40;
-            this.btnOcultarFact.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnOcultarFact.Location = new System.Drawing.Point(12, 373);
-            this.btnOcultarFact.Name = "btnOcultarFact";
-            this.btnOcultarFact.Size = new System.Drawing.Size(175, 42);
-            this.btnOcultarFact.TabIndex = 19;
-            this.btnOcultarFact.Text = "FACTURAS";
-            this.btnOcultarFact.UseVisualStyleBackColor = false;
-            this.btnOcultarFact.Click += new System.EventHandler(this.btnOcultarFact_Click);
-            // 
-            // btnOcultarLugar
-            // 
-            this.btnOcultarLugar.FlatAppearance.BorderSize = 0;
-            this.btnOcultarLugar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(199)))));
-            this.btnOcultarLugar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOcultarLugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOcultarLugar.ForeColor = System.Drawing.Color.White;
-            this.btnOcultarLugar.IconChar = FontAwesome.Sharp.IconChar.City;
-            this.btnOcultarLugar.IconColor = System.Drawing.Color.White;
-            this.btnOcultarLugar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnOcultarLugar.IconSize = 40;
-            this.btnOcultarLugar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnOcultarLugar.Location = new System.Drawing.Point(12, 421);
-            this.btnOcultarLugar.Name = "btnOcultarLugar";
-            this.btnOcultarLugar.Size = new System.Drawing.Size(175, 42);
-            this.btnOcultarLugar.TabIndex = 20;
-            this.btnOcultarLugar.Text = "LUGARES";
-            this.btnOcultarLugar.UseVisualStyleBackColor = false;
-            this.btnOcultarLugar.Click += new System.EventHandler(this.btnOcultarLugar_Click);
-            // 
-            // btnOcultarReserva
-            // 
-            this.btnOcultarReserva.FlatAppearance.BorderSize = 0;
-            this.btnOcultarReserva.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(199)))));
-            this.btnOcultarReserva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOcultarReserva.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOcultarReserva.ForeColor = System.Drawing.Color.White;
-            this.btnOcultarReserva.IconChar = FontAwesome.Sharp.IconChar.Laptop;
-            this.btnOcultarReserva.IconColor = System.Drawing.Color.White;
-            this.btnOcultarReserva.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnOcultarReserva.IconSize = 40;
-            this.btnOcultarReserva.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnOcultarReserva.Location = new System.Drawing.Point(12, 469);
-            this.btnOcultarReserva.Name = "btnOcultarReserva";
-            this.btnOcultarReserva.Size = new System.Drawing.Size(175, 42);
-            this.btnOcultarReserva.TabIndex = 21;
-            this.btnOcultarReserva.Text = "RESERVAS";
-            this.btnOcultarReserva.UseVisualStyleBackColor = false;
-            this.btnOcultarReserva.Click += new System.EventHandler(this.btnOcultarReserva_Click);
             // 
             // frmMantenimiento
             // 

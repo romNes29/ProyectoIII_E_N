@@ -10,36 +10,22 @@ using System.Windows.Forms;
 
 namespace PresentacionLogin
 {
-    public partial class frmCRUDClientes : Form
+    public partial class frmCRUDTours : Form
     {
         static frmMantenimiento ofrmMantenimiento = new frmMantenimiento();
-        public frmCRUDClientes()
+        public frmCRUDTours()
         {
             InitializeComponent();
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void frmCRUDTours_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void lbCedula_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmCRUDClientes_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            ofrmMantenimiento.Visible = true;
-            this.Hide();
-        }
-
-        private void btnInicioM_Click(object sender, EventArgs e)
+        private void btnInicioM_Click_1(object sender, EventArgs e)
         {
             frmMantenimiento frmMantenimiento = new frmMantenimiento();
             frmMantenimiento.Visible = true;
@@ -52,9 +38,10 @@ namespace PresentacionLogin
             lblFecha.Text = DateTime.Now.ToShortDateString();
         }
 
-        private void frmCRUDClientes_Load(object sender, EventArgs e)
+        private void frmCRUDTours_FormClosed(object sender, FormClosedEventArgs e)
         {
-
+            ofrmMantenimiento.Visible = true;
+            this.Hide();
         }
     }
 }
