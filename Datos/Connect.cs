@@ -25,11 +25,14 @@ namespace Datos
             }
        
         }
+
         //Method that disconnects the database from the application
-        public void desconectarBaseDatos()
+        public static void desconectarBaseDatos()
         {
             conn.Close();
         }
+
+
         //Method validates that the user exists
         public static (bool,string) validaCredenciales(string usuario, string contrasenna)
         {
@@ -54,6 +57,24 @@ namespace Datos
 
             return (permitirAcceso,puesto);
             
+        }
+
+        public static DataTable consultarUnDato(String query)
+        {
+            try
+            {
+                NpgsqlCommand conector = new NpgsqlCommand(query, conn);
+                NpgsqlDataAdapter datos = new NpgsqlDataAdapter(conector);
+                DataTable table = new DataTable();
+                datos.Fill(table);
+                desconectarBaseDatos();
+                return table;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+
         }
     }
 }
