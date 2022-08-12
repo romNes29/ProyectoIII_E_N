@@ -13,7 +13,7 @@ namespace Datos
         static NpgsqlConnection conn = new NpgsqlConnection("Server=localhost; Database=EMPRESA; User Id=fundamentos; Password=choco29;");
         
         //Method that connects the database to the application
-        public void conectarBaseDatos()
+        public static void conectarBaseDatos()
         {
             try
             {
@@ -54,9 +54,7 @@ namespace Datos
             {
                 MessageBox.Show("ERROR: "+e.ToString());
             }
-
             return (permitirAcceso,puesto);
-            
         }
 
         public static DataTable consultarUnDato(String query)

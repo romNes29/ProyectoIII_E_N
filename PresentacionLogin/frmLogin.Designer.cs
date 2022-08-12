@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pbxOcultar = new FontAwesome.Sharp.IconPictureBox();
+            this.pbxVer = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,15 +41,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.btnIniciarSesion = new System.Windows.Forms.Button();
-            this.pbxVer = new FontAwesome.Sharp.IconPictureBox();
-            this.pbxOcultar = new FontAwesome.Sharp.IconPictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxOcultar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxVer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxVer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxOcultar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -69,6 +69,36 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(860, 568);
             this.panel1.TabIndex = 2;
+            // 
+            // pbxOcultar
+            // 
+            this.pbxOcultar.BackColor = System.Drawing.Color.White;
+            this.pbxOcultar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pbxOcultar.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
+            this.pbxOcultar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pbxOcultar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pbxOcultar.IconSize = 26;
+            this.pbxOcultar.Location = new System.Drawing.Point(638, 343);
+            this.pbxOcultar.Name = "pbxOcultar";
+            this.pbxOcultar.Size = new System.Drawing.Size(26, 26);
+            this.pbxOcultar.TabIndex = 13;
+            this.pbxOcultar.TabStop = false;
+            this.pbxOcultar.Click += new System.EventHandler(this.pbxOcultar_Click);
+            // 
+            // pbxVer
+            // 
+            this.pbxVer.BackColor = System.Drawing.Color.White;
+            this.pbxVer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pbxVer.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.pbxVer.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pbxVer.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pbxVer.IconSize = 26;
+            this.pbxVer.Location = new System.Drawing.Point(638, 343);
+            this.pbxVer.Name = "pbxVer";
+            this.pbxVer.Size = new System.Drawing.Size(26, 26);
+            this.pbxVer.TabIndex = 12;
+            this.pbxVer.TabStop = false;
+            this.pbxVer.Click += new System.EventHandler(this.pbxVer_Click);
             // 
             // iconPictureBox1
             // 
@@ -187,36 +217,6 @@
             this.btnIniciarSesion.UseVisualStyleBackColor = false;
             this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
             // 
-            // pbxVer
-            // 
-            this.pbxVer.BackColor = System.Drawing.Color.White;
-            this.pbxVer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.pbxVer.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            this.pbxVer.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.pbxVer.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pbxVer.IconSize = 26;
-            this.pbxVer.Location = new System.Drawing.Point(638, 343);
-            this.pbxVer.Name = "pbxVer";
-            this.pbxVer.Size = new System.Drawing.Size(26, 26);
-            this.pbxVer.TabIndex = 12;
-            this.pbxVer.TabStop = false;
-            this.pbxVer.Click += new System.EventHandler(this.pbxVer_Click);
-            // 
-            // pbxOcultar
-            // 
-            this.pbxOcultar.BackColor = System.Drawing.Color.White;
-            this.pbxOcultar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.pbxOcultar.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
-            this.pbxOcultar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.pbxOcultar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pbxOcultar.IconSize = 26;
-            this.pbxOcultar.Location = new System.Drawing.Point(638, 343);
-            this.pbxOcultar.Name = "pbxOcultar";
-            this.pbxOcultar.Size = new System.Drawing.Size(26, 26);
-            this.pbxOcultar.TabIndex = 13;
-            this.pbxOcultar.TabStop = false;
-            this.pbxOcultar.Click += new System.EventHandler(this.pbxOcultar_Click);
-            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -232,12 +232,12 @@
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxOcultar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxVer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxVer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxOcultar)).EndInit();
             this.ResumeLayout(false);
 
         }
